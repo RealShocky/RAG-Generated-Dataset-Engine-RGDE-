@@ -209,6 +209,8 @@ The web interface allows you to:
   - **Evaluator**: Compares teacher and student model outputs
   - **Refiner**: Automatically improves low-quality responses
   - **Feedback Loop**: Orchestrates the evaluation-refinement cycle
+  
+  See [FEEDBACK_SYSTEM.md](docs/FEEDBACK_SYSTEM.md) for detailed documentation on the feedback system
 - **Web Interface**: Streamlit dashboard for dataset visualization, document exploration, pipeline configuration, and dataset export capabilities with dark mode styling for improved readability
 
 ## Contributing
