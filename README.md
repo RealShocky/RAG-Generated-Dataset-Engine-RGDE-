@@ -162,7 +162,21 @@ python teacherforge.py run-pipeline --questions prompts/prompts.jsonl --output o
 python -m training.train_student --dataset outputs/your_dataset/dataset.jsonl --model "mistralai/Mistral-7B-v0.1" --output outputs/your_dataset/student_model
 ```
 
-### 5. Use the Web Interface (optional)
+### 5. Run the Feedback Loop (optional)
+
+Improve your dataset quality with the built-in feedback system:
+
+```bash
+python feedback_cli.py run-feedback --dataset outputs/your_dataset/dataset.jsonl --teacher-model "gpt-4o" --student-model "outputs/your_dataset/student_model" --iterations 2
+```
+
+Or evaluate your student model against the teacher:
+
+```bash
+python feedback_cli.py evaluate --dataset outputs/your_dataset/dataset.jsonl --teacher-model "gpt-4o" --student-model "outputs/your_dataset/student_model" --samples 50
+```
+
+### 6. Use the Web Interface (optional)
 
 TeacherForge includes a Streamlit web interface for dataset visualization and management:
 
@@ -180,7 +194,7 @@ The web interface allows you to:
 
 - **Prompt Generator**: Creates diverse, domain-specific questions
 - **Document Processor**: Smart document chunking with overlap control for different document formats
-- **Retriever**: Queries vector databases (FAISS, Qdrant, Weaviate, Chroma) and returns relevant documents
+- **Retriever**: Queries FAISS, Qdrant, or Weaviate store for document retrieval
 - **Generator**: Uses a large language model with RAG to generate answers, with support for multiple LLM providers:
   - **OpenAI**: GPT-3.5 and GPT-4 models
   - **Anthropic**: Claude models (opus, sonnet, haiku)
@@ -191,6 +205,10 @@ The web interface allows you to:
 - **Post-processor**: Validates and enhances the generated dataset
 - **Dataset Builder**: Formats data for instruction fine-tuning
 - **Training Pipeline**: Trains smaller models via LoRA/QLoRA
+- **Feedback System**: Self-improving loop for dataset quality
+  - **Evaluator**: Compares teacher and student model outputs
+  - **Refiner**: Automatically improves low-quality responses
+  - **Feedback Loop**: Orchestrates the evaluation-refinement cycle
 - **Web Interface**: Streamlit dashboard for dataset visualization, document exploration, pipeline configuration, and dataset export capabilities with dark mode styling for improved readability
 
 ## Contributing
