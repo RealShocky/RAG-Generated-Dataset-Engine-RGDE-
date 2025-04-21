@@ -6,9 +6,11 @@ A modular, automated pipeline that uses RAG (Retrieval-Augmented Generation) to 
 
 **Status: Implemented and Tested ✅**
 
-![TeacherForge Pipeline](https://user-images.githubusercontent.com/YOUR_USERNAME/RAG-Generated-Dataset-Engine-RGDE-/raw/main/docs/images/pipeline_diagram.png)
+<!-- Add a pipeline diagram image to enhance your README
+![TeacherForge Pipeline](https://github.com/RealShocky/RAG-Generated-Dataset-Engine-RGDE-/raw/master/docs/images/pipeline_diagram.png)
+-->
 
-> **Note**: Add the pipeline_diagram.png to your repository after pushing to GitHub
+> **Note**: Consider adding a pipeline_diagram.png to your docs/images directory to enhance your README
 
 ## Overview
 
@@ -47,8 +49,8 @@ TeacherForge enables you to:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/teacherforge.git
-cd teacherforge
+git clone https://github.com/RealShocky/RAG-Generated-Dataset-Engine-RGDE-.git
+cd RAG-Generated-Dataset-Engine-RGDE-
 
 # Create a virtual environment
 python -m venv venv
@@ -65,11 +67,11 @@ cp .env.template .env
 # - HuggingFace API token for their models
 # - Path to model file for local models
 
-# Create FAISS index with sample documents
-python create_faiss_index.py
+# Process and ingest documents (first time setup)
+python -m retrieval.document_processor --source your_documents_folder --output data/processed_docs.json
 
-# Process and ingest documents
-python ingest_documents.py --source your_documents_folder --format pdf
+# Create vector index from documents
+python -m retrieval.retriever --documents data/processed_docs.json --index data/faiss.index
 
 # Generate questions
 python teacherforge.py generate-questions --num 10 --domain "your domain"
@@ -78,7 +80,7 @@ python teacherforge.py generate-questions --num 10 --domain "your domain"
 python teacherforge.py run-pipeline --questions prompts/prompts.jsonl --output outputs/your_dataset
 
 # Launch the web interface (optional)
-python web_interface.py
+python web_interface_fixed.py
 ```
 
 ## Configuration
@@ -122,12 +124,20 @@ CHROMA_PERSIST_DIR=./chroma_db
 
 ### 1. Prepare your document corpus
 
-Index your documents into a vector database (e.g., FAISS, Qdrant).
+Index your documents into a vector database (e.g., FAISS, Qdrant):
+
+```bash
+# Process documents and create embeddings
+python -m retrieval.document_processor --source your_documents_folder --output data/processed_docs.json
+
+# Create or update vector index
+python -m retrieval.retriever --documents data/processed_docs.json --index data/faiss.index
+```
 
 ### 2. Generate questions or provide your own
 
 ```bash
-python -m prompts.generate_prompts --num 100 --domain "machine learning"
+python teacherforge.py generate-questions --num 100 --domain "machine learning" --output prompts/gen_questions.jsonl
 ```
 
 ### 3. Run the full pipeline
@@ -149,8 +159,22 @@ python teacherforge.py run-pipeline --questions prompts/prompts.jsonl --output o
 ### 4. Train a student model
 
 ```bash
-python -m training.train_student --dataset outputs/dataset.jsonl --model "mistralai/Mistral-7B-v0.1"
+python -m training.train_student --dataset outputs/your_dataset/dataset.jsonl --model "mistralai/Mistral-7B-v0.1" --output outputs/your_dataset/student_model
 ```
+
+### 5. Use the Web Interface (optional)
+
+TeacherForge includes a Streamlit web interface for dataset visualization and management:
+
+```bash
+python web_interface_fixed.py
+```
+
+The web interface allows you to:
+- View and explore document collections
+- Configure and run the pipeline with different LLM providers
+- Visualize generated datasets
+- Export datasets in various formats
 
 ## Components
 
@@ -162,6 +186,8 @@ python -m training.train_student --dataset outputs/dataset.jsonl --model "mistra
   - **Anthropic**: Claude models (opus, sonnet, haiku)
   - **HuggingFace**: Access to all HuggingFace Inference API models
   - **Local Models**: Support for running local models via llama.cpp or vLLM
+  
+  See [LLM_PROVIDERS.md](docs/LLM_PROVIDERS.md) for detailed documentation on configuring and using different providers.
 - **Post-processor**: Validates and enhances the generated dataset
 - **Dataset Builder**: Formats data for instruction fine-tuning
 - **Training Pipeline**: Trains smaller models via LoRA/QLoRA
