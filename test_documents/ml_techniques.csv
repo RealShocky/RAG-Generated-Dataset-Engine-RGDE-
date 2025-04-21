@@ -1,0 +1,11 @@
+Technique,Category,Description,Key Applications
+Transfer Learning,Deep Learning,A technique that reuses a model trained on one task for another related task. It preserves knowledge gained while solving one problem and applies it to a different but related problem.,Computer Vision; Natural Language Processing; Speech Recognition
+Ensemble Methods,Machine Learning,Techniques that combine multiple learning algorithms to obtain better predictive performance than could be obtained from any single algorithm.,Kaggle Competitions; Financial Forecasting; Medical Diagnosis
+Reinforcement Learning,AI,A type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize a reward signal.,Game Playing; Robotics; Autonomous Vehicles; Resource Management
+Federated Learning,Privacy-Preserving ML,An approach that trains algorithms across multiple decentralized devices holding local data samples without exchanging them.,Mobile Keyboard Prediction; Healthcare Analytics; IoT Applications
+Few-Shot Learning,Meta Learning,A type of machine learning that can learn new concepts from just a few examples.,Image Classification with Limited Data; Personalization Systems; Low-Resource Languages
+Contrastive Learning,Self-Supervised Learning,A technique that learns representations by contrasting positive pairs against negative pairs.,Computer Vision; Representation Learning; Recommendation Systems
+Knowledge Distillation,Model Compression,A technique for transferring knowledge from a large model to a smaller one.,Edge Deployment; Mobile Applications; Resource-Constrained Environments
+Active Learning,Supervised Learning,A process where the algorithm can query a user or other information source to label new data points.,Data Labeling; Autonomous Exploration; Annotation Cost Reduction
+Bayesian Optimization,Hyperparameter Tuning,A sequential design strategy for global optimization of black-box functions.,Neural Architecture Search; Experimental Design; Drug Discovery
+Explainable AI (XAI),AI Ethics,Methods and techniques that make AI systems' decisions understandable to humans.,Healthcare; Financial Services; Legal Applications; Regulatory Compliance

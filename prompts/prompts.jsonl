@@ -1,0 +1,9 @@
+{"question": "What is Retrieval-Augmented Generation (RAG) and how does it improve language model outputs?"}
+{"question": "How do embeddings work in vector databases for semantic search?"}
+{"question": "What are the main differences between fine-tuning and LoRA for adapting language models?"}
+{"question": "Explain the concept of hallucination in large language models and methods to reduce it."}
+{"question": "What is the role of context window size in transformer-based language models?"}
+{"question": "How does quantization affect model performance and deployment requirements?"}
+{"question": "Compare and contrast few-shot learning, zero-shot learning, and fine-tuning approaches."}
+{"question": "What are token embeddings and why are they important in transformer architectures?"}
+{"question": "Explain the attention mechanism in transformers and its significance."}

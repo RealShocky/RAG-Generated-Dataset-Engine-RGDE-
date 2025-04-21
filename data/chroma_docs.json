@@ -1,0 +1,146 @@
+[
+  {
+    "id": "sample_documents_0",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 1/16\n\n[ { \"id\": \"doc1\", \"title\": \"Introduction to RAG\", \"text\": \"Retrieval-Augmented Generation (RAG) is a technique that enhances large language models by retrieving relevant information from external knowledge sources before generating a response. This approach helps ground the model's outputs in factual information, reducing hallucinations.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 0,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_1",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 2/16\n\nThis approach helps ground the model's outputs in factual information, reducing hallucinations. RAG combines the strengths of retrieval-based and generation-based approaches to create more accurate and contextually relevant outputs.\", \"source\": \"AI Research Papers\" }, { \"id\": \"doc2\", \"title\": \"Vector Databases\", \"text\": \"Vector databases are specialized database systems designed to store and efficiently query high-dimensional vector embeddings.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 1,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_2",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 3/16\n\ndatabase systems designed to store and efficiently query high-dimensional vector embeddings. They enable semantic search capabilities by finding similar vectors based on distance metrics like cosine similarity. Popular vector databases include FAISS, Qdrant, Weaviate, and Pinecone.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 2,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_3",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 4/16\n\nPopular vector databases include FAISS, Qdrant, Weaviate, and Pinecone. These systems are crucial components in modern retrieval systems for RAG applications.\", \"source\": \"Database Technologies Review\" }, { \"id\": \"doc3\", \"title\": \"Embeddings Explained\", \"text\": \"Embeddings are dense vector representations of data (text, images, etc.) that capture semantic meaning in a high-dimensional space.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 3,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_4",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 5/16\n\nof data (text, images, etc.) that capture semantic meaning in a high-dimensional space. In NLP, text embeddings map words or phrases to vectors where similar meanings are positioned closer together. Models like BERT, GPT, and Sentence Transformers generate these embeddings. They serve as the foundation for semantic search and similarity comparisons in AI applications.\", \"source\": \"Machine Learning Fundamentals\" }, { \"id\": \"doc4\", \"title\": \"Fine-tuning vs.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 4,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_5",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 6/16\n\n\"source\": \"Machine Learning Fundamentals\" }, { \"id\": \"doc4\", \"title\": \"Fine-tuning vs. Parameter-Efficient Fine-Tuning\", \"text\": \"Traditional fine-tuning updates all parameters in a pre-trained model for a specific task. While effective, it requires significant computational resources and creates a full-sized model copy. Parameter-Efficient Fine-Tuning (PEFT) methods like LoRA (Low-Rank Adaptation) update only a small subset of parameters or add compact trainable modules.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 5,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_6",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 7/16\n\n(Low-Rank Adaptation) update only a small subset of parameters or add compact trainable modules. LoRA adds low-rank matrices to existing weights, reducing memory requirements while maintaining performance.\", \"source\": \"Deep Learning Optimization Techniques\" }, { \"id\": \"doc5\", \"title\": \"LoRA Training Explained\", \"text\": \"Low-Rank Adaptation (LoRA) is a technique for efficiently fine-tuning large language models.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 6,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_7",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 8/16\n\n\"Low-Rank Adaptation (LoRA) is a technique for efficiently fine-tuning large language models. Rather than updating all model weights, LoRA freezes the pre-trained weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 7,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_8",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 9/16\n\nand injects trainable rank decomposition matrices into each layer of the Transformer architecture. This dramatically reduces the number of trainable parameters, typically by 10,000x, enabling fine-tuning on consumer hardware while maintaining model quality.\", \"source\": \"PEFT Documentation\" }, { \"id\": \"doc6\", \"title\": \"Instruction Datasets for Fine-tuning\", \"text\": \"Instruction datasets consist of paired examples showing inputs (instructions/questions) and desired outputs (responses).",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 8,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_9",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 10/16\n\nconsist of paired examples showing inputs (instructions/questions) and desired outputs (responses). High-quality instruction datasets include diverse task types, clear instructions, and accurate responses. They often follow formats like: {instruction, input, output} or conversation formats with user/assistant messages.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 9,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_10",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 11/16\n\nformats like: {instruction, input, output} or conversation formats with user/assistant messages. Popular examples include Stanford Alpaca, Anthropic's Claude dataset, and OpenAI's conversational datasets.\", \"source\": \"LLM Training Resources\" }, { \"id\": \"doc7\", \"title\": \"Synthetic Data Generation\", \"text\": \"Synthetic data generation involves creating artificial datasets that mimic real-world data characteristics.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 10,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_11",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 12/16\n\ndata generation involves creating artificial datasets that mimic real-world data characteristics. For language models, this often means using larger, more capable models to generate training examples for smaller models.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 11,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_12",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 13/16\n\noften means using larger, more capable models to generate training examples for smaller models. Techniques include prompting large LLMs with diverse instructions, distilling knowledge through imitation learning, and using reinforcement learning from human feedback to align model outputs with human preferences.\", \"source\": \"AI Data Engineering\" }, { \"id\": \"doc8\", \"title\": \"Evaluating Generated Datasets\", \"text\": \"Evaluating the quality of synthetic datasets involves multiple dimensions: factual accuracy (comparing against ground truth), diversity (variety of topics and formats), naturalness (how human-like the text is), and utility (improvement in downstream model performance).",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 12,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_13",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 14/16\n\n(how human-like the text is), and utility (improvement in downstream model performance). Automatic metrics like BLEU, ROUGE, and BERTScore provide quantitative assessment, while human evaluation remains crucial for subjective quality aspects.\", \"source\": \"ML Evaluation Frameworks\" }, { \"id\": \"doc9\", \"title\": \"Prompt Engineering for Dataset Creation\", \"text\": \"Effective prompt engineering for dataset creation involves crafting clear, specific instructions that elicit the desired response format and content.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 13,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_14",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 15/16\n\ninvolves crafting clear, specific instructions that elicit the desired response format and content. Techniques include few-shot examples, chain-of-thought prompting, and structured output formatting.",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 14,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  },
+  {
+    "id": "sample_documents_15",
+    "title": "sample_documents.json",
+    "text": "Title: sample_documents.json\nSource: data\\sample_documents.json\nChunk: 16/16\n\nTechniques include few-shot examples, chain-of-thought prompting, and structured output formatting. When generating instruction datasets, prompts should specify the domain, desired detail level, and any constraints on the output format.\", \"source\": \"Prompt Engineering Guide\" }, { \"id\": \"doc10\", \"title\": \"Hallucination Prevention in RAG\", \"text\": \"Hallucinations\\u2014model-generated statements that are factually incorrect or unsupported\\u2014can be mitigated in RAG systems through several techniques: providing sufficient context from reliable sources, instructing the model to admit uncertainty, implementing post-generation fact checking, and using grounding techniques that explicitly connect generated statements to retrieved information sources.\", \"source\": \"Responsible AI Practices\" } ]",
+    "source": "data\\sample_documents.json",
+    "chunk_index": 15,
+    "total_chunks": 16,
+    "original_doc_id": "sample_documents"
+  }
+]

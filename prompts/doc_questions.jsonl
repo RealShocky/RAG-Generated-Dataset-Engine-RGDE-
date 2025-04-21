@@ -1,0 +1,3 @@
+{"question": "1. Can you explain the process of document preprocessing in the context of building a retrieve and generate (RAG) system? What are the key steps involved, and what are some of the challenges that might be encountered during this stage?"}
+{"question": "2. How does a RAG system utilize token-based documents and passage retrieval to generate responses? Can you provide a detailed explanation, citing a practical example to illustrate this process?"}
+{"question": "3. In the context of machine learning, how does a RAG system handle the issue of context preservation in document processing? Can you explain how this impacts the overall efficacy of the system and the quality of the generated responses?"}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ml_techniques_0",
+    "title": "ml_techniques.csv",
+    "text": "Title: ml_techniques.csv\nSource: test_documents\\ml_techniques.csv\nChunk: 1/2\n\nTechnique: Transfer Learning, Category: Deep Learning, Description: A technique that reuses a model trained on one task for another related task.",
+    "source": "test_documents\\ml_techniques.csv",
+    "chunk_index": 0,
+    "total_chunks": 2,
+    "original_doc_id": "ml_techniques"
+  },
+  {
+    "id": "ml_techniques_1",
+    "title": "ml_techniques.csv",
+    "text": "Title: ml_techniques.csv\nSource: test_documents\\ml_techniques.csv\nChunk: 2/2\n\nDescription: A technique that reuses a model trained on one task for another related task. It preserves knowledge gained while solving one problem and applies it to a different but related problem., Key Applications: Computer Vision; Natural Language Processing; Speech Recognition Technique: Ensemble Methods, Category: Machine Learning, Description: Techniques that combine multiple learning algorithms to obtain better predictive performance than could be obtained from any single algorithm., Key Applications: Kaggle Competitions; Financial Forecasting; Medical Diagnosis Technique: Reinforcement Learning, Category: AI, Description: A type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize a reward signal., Key Applications: Game Playing; Robotics; Autonomous Vehicles; Resource Management Technique: Federated Learning, Category: Privacy-Preserving ML, Description: An approach that trains algorithms across multiple decentralized devices holding local data samples without exchanging them., Key Applications: Mobile Keyboard Prediction; Healthcare Analytics; IoT Applications Technique: Few-Shot Learning, Category: Meta Learning, Description: A type of machine learning that can learn new concepts from just a few examples., Key Applications: Image Classification with Limited Data; Personalization Systems; Low-Resource Languages Technique: Contrastive Learning, Category: Self-Supervised Learning, Description: A technique that learns representations by contrasting positive pairs against negative pairs., Key Applications: Computer Vision; Representation Learning; Recommendation Systems Technique: Knowledge Distillation, Category: Model Compression, Description: A technique for transferring knowledge from a large model to a smaller one., Key Applications: Edge Deployment; Mobile Applications; Resource-Constrained Environments Technique: Active Learning, Category: Supervised Learning, Description: A process where the algorithm can query a user or other information source to label new data points., Key Applications: Data Labeling; Autonomous Exploration; Annotation Cost Reduction Technique: Bayesian Optimization, Category: Hyperparameter Tuning, Description: A sequential design strategy for global optimization of black-box functions., Key Applications: Neural Architecture Search; Experimental Design; Drug Discovery Technique: Explainable AI (XAI), Category: AI Ethics, Description: Methods and techniques that make AI systems' decisions understandable to humans., Key Applications: Healthcare; Financial Services; Legal Applications; Regulatory Compliance",
+    "source": "test_documents\\ml_techniques.csv",
+    "chunk_index": 1,
+    "total_chunks": 2,
+    "original_doc_id": "ml_techniques"
+  }
+]
